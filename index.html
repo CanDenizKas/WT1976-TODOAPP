@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>To-Do Uygulaması</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-3 text-light">TO-DO APP UYGULAMASI</h1>
+   
+      <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-6 col-md-5 mt-5 text-warning">
+      </div>
+
+     
+      <div class="row mt-5">
+        <div class="col-6 col-md-4">
+       
+        </div>
+        <div class="col-6 col-md-4">
+          <form class="d-flex" id="frmList">
+            <input
+              id="txtListe"
+              type="text"
+              class="form-control"
+              placeholder="Yapılıcaklar ..."
+              required
+            />
+            <button class="btn btn-danger ml-2">
+              <i class="fas fa-plus-square"></i>
+            </button>
+          </form>
+          
+        </div>
+
+        
+<div class="col-6 col-md-4 text-light">
+        <input type="date" id="datechanger">
+        <input type="text" id="find" placeholder="Ara...">
+        <input type="checkbox" id="yildizgoster">Yıldızlı mesajları göster</input>
+        
+      </div>
+
+      <div class="row">
+        <div class="col-6 text-info"><ul id="todos" class="list-unstyled mt-3 todo-list"></ul></div>
+        <div class="col-6"></div>
+      </div>
+    </div>
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
